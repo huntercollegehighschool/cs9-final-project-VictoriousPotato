@@ -23,6 +23,11 @@ I renamed go to sleep to end day, and removed the prompt to punch the wall (you 
 could you test for bugs and also maybe make the science thing a little easier/more common knowledge?
 
 Also you submitted the project proposal form so I think you should submit the github when we are both ready.
+
+
+******************************************************************************
+IMPORTANT: If you do work on this file it does not save automatically, and you have to commit and push it. This will not submit the file.
+******************************************************************************
 '''
 import os 
 import time
