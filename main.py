@@ -18,6 +18,27 @@ I made a limit of 15 hours, but I dont really have time to test what happens if 
 
 Also maybe make the science test studying easier
 
+
+"""
+Name(s): Adela Seltzer, Theo Parker
+Name of Project: Home From School
+"""
+
+#Write the main part of your program here. Use of the other pages is optional.
+
+#import page1  # uncomment if you're using page1
+#import page2  # uncomment if you're using page2
+#import page3  # uncomment if you're using page3
+#import page4  # uncomment if you're using page4
+
+'''
+'''
+I think I fixed almost everything, we still do not have a limit on the amount of time you can spend on this, maybe make it 15 so ppl can go overtime? 
+
+I made a limit of 15 hours, but I dont really have time to test what happens if you go overtime. it should work. 
+
+Also maybe make the science test studying easier
+
 I renamed go to sleep to end day, and removed the prompt to punch the wall (you can still punch wall it just wont say you can)
 
 could you test for bugs and also maybe make the science thing a little easier/more common knowledge?
@@ -39,25 +60,24 @@ def DoScience():
   Science += 1  
   print("There are three topics on your science study guide, and to feel ready after learning each one, you ask yourself a question. The question for the first topic says:")
   time.sleep (1.5)
-  print("What is the space between the end of the axon in one neuron and the dendrite of the next neuron in the body?")
-  sciencequestion = input("? ")
-  if sciencequestion == 'synapse' or sciencequestion == 'Synapse':
+  sciencequestion = input("What is the first element on the periodic table? ")
+  if sciencequestion == 'hydrogen' or sciencequestion == 'Hydrogen':
     Science += 1
   else:
     Science += 0
   time.sleep (0.5)
   print("Next question")
   time.sleep (0.5)
-  sciencequestion = input("Which lobe in the brain controls executive functions? ")
-  if sciencequestion == 'Frontal' or sciencequestion == 'frontal' or sciencequestion == 'frontal lobe' or sciencequestion == 'Frontal lobe' or sciencequestion == 'Frontal Lobe':
+  sciencequestion = input("How many valence electrons is the maximum? ")
+  if sciencequestion == '8':
     Science +=1
   else:
     Science +=0
   time.sleep (0.5)
   print("Last question")
   time.sleep (0.5)
-  sciencequestion = input("Where is insulin produced? ")
-  if sciencequestion == 'pancreas' or sciencequestion == 'Pancreas' or sciencequestion == 'the pancreas' or sciencequestion == 'The pancreas' or sciencequestion == 'The Pancreas':
+  sciencequestion = input("True or false: is water polarized? ")
+  if sciencequestion == 'True' or sciencequestion == 'true':
     Science +=1
   else:
     Science += 0
@@ -289,18 +309,18 @@ def Whatdo():
   else:
     print("You stayed in your room for too long, and your parents noticed you hadn't gone to school yet, and how sleepy you looked. They sent you to school, but you arrived very late.")
     EndDay()
-  hello = input("Choose one: 'History' 'Math' 'Science' 'Games' 'End The Day':  ")
-  if hello == 'History' or 'history' and History == 0:
+  hello = input("Choose one: 'History' 'Math' 'Science' 'Games' 'Punch Wall' 'End The Day':  ")
+  if hello == 'History' or hello == 'history' and History == 0:
     DoHistory()
-  elif hello == 'Math' or 'math' and Math == 0:
+  elif hello == 'Math' or hello =='math' and Math == 0:
     DoMath()
-  elif hello == 'Science' or 'science' and Science == 0:
+  elif hello == 'Science' or hello =='science' and Science == 0:
     DoScience()
-  elif hello == 'Games' or 'games':
+  elif hello == 'Games' or hello =='games':
     DoGames()
-  elif hello == 'Punch Wall' or 'Punch wall' or 'punch Wall' or 'punch wall':
+  elif hello == 'Punch Wall' or hello =='Punch wall' or hello =='punch Wall' or hello =='punch wall':
     DoPunchWall()
-  elif hello == 'End The day' or 'End The day' or 'End the Day' or 'End the day' or 'end The Day' or 'end The day' or 'end the Day' or 'end the day':
+  elif hello == 'End The Day' or hello =='End The day' or hello =='End the Day' or hello =='End the day' or hello =='end The Day' or hello =='end The day' or hello == 'end the Day' or hello == 'end the day':
     EndDay()
   else:
     print("Either that is not an option or you have already done this and cannot redo it. Please try again.")
@@ -326,3 +346,4 @@ Math = 0
 global PunchWall
 PunchWall = 0
 Whatdo()
+
