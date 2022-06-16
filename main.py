@@ -56,9 +56,9 @@ def DoScience():
 def DoGames():
   global Game
   print("You decided to play some games")
-  time.sleep(1.0)
+  time.sleep(0.5)
   print("...")
-  time.sleep(1.0)
+  time.sleep(0.5)
   print("You played games for a while, and you feel happier")
   Game += 1
   global Hours
