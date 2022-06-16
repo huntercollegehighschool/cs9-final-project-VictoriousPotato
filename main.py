@@ -11,45 +11,7 @@ Name of Project: Home From School
 #import page4  # uncomment if you're using page4
 
 
-'''
-I think I fixed almost everything, we still do not have a limit on the amount of time you can spend on this, maybe make it 15 so ppl can go overtime? 
 
-I made a limit of 15 hours, but I dont really have time to test what happens if you go overtime. it should work. 
-
-Also maybe make the science test studying easier
-
-
-"""
-Name(s): Adela Seltzer, Theo Parker
-Name of Project: Home From School
-"""
-
-#Write the main part of your program here. Use of the other pages is optional.
-
-#import page1  # uncomment if you're using page1
-#import page2  # uncomment if you're using page2
-#import page3  # uncomment if you're using page3
-#import page4  # uncomment if you're using page4
-
-'''
-'''
-I think I fixed almost everything, we still do not have a limit on the amount of time you can spend on this, maybe make it 15 so ppl can go overtime? 
-
-I made a limit of 15 hours, but I dont really have time to test what happens if you go overtime. it should work. 
-
-Also maybe make the science test studying easier
-
-I renamed go to sleep to end day, and removed the prompt to punch the wall (you can still punch wall it just wont say you can)
-
-could you test for bugs and also maybe make the science thing a little easier/more common knowledge?
-
-Also you submitted the project proposal form so I think you should submit the github when we are both ready.
-
-
-******************************************************************************
-IMPORTANT: If you do work on this file it does not save automatically, and you have to commit and push it. This will not submit the file.
-******************************************************************************
-'''
 import os 
 import time
 
@@ -58,7 +20,7 @@ def DoScience():
   print("You decided to study for science")
   global Science 
   Science += 1  
-  print("There are three topics on your science study guide, and to feel ready after learning each one, you ask yourself a question. The question for the first topic says:")
+  print("There are three topics on your science study guide, and to feel ready for the test, you look up a quizlet on the subject. The question for the first topic says:")
   time.sleep (1.5)
   sciencequestion = input("What is the first element on the periodic table? ")
   if sciencequestion == 'hydrogen' or sciencequestion == 'Hydrogen':
@@ -278,15 +240,15 @@ def EndDay():
   elif PunchWall == 1:
     time.sleep (0.5)
     print("You punched the wall, but the pain was manageble and you had a fine day.")
-  print("After going about your day, you felt if you had to give a value to your happiness, it would be: ", Happy)
+  print("After going about your day, you felt if you had to give a value to your happiness, it would be: ", Happy,"/39")
   if Happy == 39: #Max happiness i think
     print("Astounding job! you felt very happy walking around school, doing your daily buisness.")
-  if Happy >= 25:
+  elif Happy >= 25:
     print("Nice job")
   elif Happy >= 0:
     print("Meh")
   else:
-    print("You did not feel great about your day. Maybe tommorow will be better..?")
+    print("You did not feel good about your day. Maybe tommorow will be better..?")
   
     
     
